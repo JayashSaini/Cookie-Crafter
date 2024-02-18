@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="bg-white pt-7 pb-7 pl-6 pr-6 md:pl-16 md:pr-16 w-full relative"
+        className="bg-white pt-7 pb-7 pl-6 pr-6 md:pl-16 md:pr-16 w-full relative z-50"
         ref={container}>
         <div className="flex justify-start items-center w-full">
           <img
@@ -85,7 +85,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className=" hamburger sm:hidden  h-auto  hidden w-full absolute top-0 left-0   backdrop-blur-sm bg-slate-500/30 translate-y-full opacity-0">
+        <div className=" hamburger sm:hidden  h-auto   hidden w-full absolute top-0 left-0   backdrop-blur-sm bg-slate-500/30 translate-y-full opacity-0">
           <div
             className=" sm:hidden h-[100px] w-full"
             onClick={hamburgerHandler}></div>

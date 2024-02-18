@@ -1,10 +1,13 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import Home from "./Components/Home/Home";
 function App() {
   return (
-    <div className=" h-screen w-full bg-slate-800">
+    <div className=" h-screen w-full ">
       <Header />
-      <p className="text-red-200"> HELLO DOSTO</p>
+      <Home />
+      <Footer />
     </div>
   );
 }
