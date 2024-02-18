@@ -5,7 +5,7 @@ import cookie3 from "../../assets/asset 9.png";
 import arrow from "../../assets/asset 8.svg";
 import appStoreIMG from "../../assets/asset 21.png";
 import playStoreIMG from "../../assets/asset 22.png";
-import cookieBg from "../../assets/cookieBg.svg";
+
 const Home = () => {
   return (
     <>
