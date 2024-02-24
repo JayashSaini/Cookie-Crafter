@@ -8,10 +8,15 @@ import { useState, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+import { useMyContext } from "../context/ContextProvider";
+
 const Header = () => {
   const container = useRef(null);
   const { contextSafe } = useGSAP({ scope: container });
   const [menuState, setMenuState] = useState(false);
+
+  const { toggleHamburger, hamburgerState } = useMyContext();
+
   const hamburgerHandler = contextSafe(() => {
     if (!menuState) {
       gsap.to(".hamburger", {
@@ -21,6 +26,8 @@ const Header = () => {
         opacity: 1,
       }); // Slide container from bottom to top
       setMenuState(true);
+      toggleHamburger();
+      console.log("Hamburger state is : ", hamburgerState);
     } else {
       gsap.to(".hamburger", {
         display: "none",
@@ -29,6 +36,8 @@ const Header = () => {
         opacity: 0,
       }); // Slide container from top to bottom
       setMenuState(false);
+      toggleHamburger();
+      console.log("Hamburger state is : ", hamburgerState);
     }
   });
 
