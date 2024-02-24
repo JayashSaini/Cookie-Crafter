@@ -27,7 +27,6 @@ const Header = () => {
       }); // Slide container from bottom to top
       setMenuState(true);
       toggleHamburger();
-      console.log("Hamburger state is : ", hamburgerState);
     } else {
       gsap.to(".hamburger", {
         display: "none",
@@ -37,7 +36,6 @@ const Header = () => {
       }); // Slide container from top to bottom
       setMenuState(false);
       toggleHamburger();
-      console.log("Hamburger state is : ", hamburgerState);
     }
   });
 
