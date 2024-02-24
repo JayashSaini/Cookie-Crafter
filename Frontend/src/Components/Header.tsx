@@ -15,7 +15,7 @@ const Header = () => {
   const { contextSafe } = useGSAP({ scope: container });
   const [menuState, setMenuState] = useState(false);
 
-  const { toggleHamburger, hamburgerState } = useMyContext();
+  const { toggleHamburger } = useMyContext();
 
   const hamburgerHandler = contextSafe(() => {
     if (!menuState) {
