@@ -14,3 +14,9 @@ p {
 .cookieBg3 {
   background-image: url(./assets/Cookie3.jpeg);
 }
+.cookieBg2 {
+  background-image: url(./assets/Cookie2.jpeg);
+}
+.cookieBg {
+  background-image: url(./assets/cookieBg.svg);
+}

@@ -85,7 +85,7 @@ const Home = () => {
             be open for orders after Monday, 01:00 PST.
           </p>
           <div
-            className={`px-7 py-5  bg-black bg-cookie-bg bg-center bg-no-repeat bg-cover gap-5 flex md:flex-row flex-col items-center justify-around rounded-2xl`}>
+            className={`px-7 py-5  bg-black cookieBg bg-center bg-no-repeat bg-cover gap-5 flex md:flex-row flex-col items-center justify-around rounded-2xl`}>
             <div
               className=" md:w-1/2  w-full md:text-start text-center font-extrabold text-white text-4xl
             ">
@@ -117,7 +117,7 @@ const Home = () => {
               </p>
             </div>
             <div
-              className={` lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] sm:w-9/12 sm:h-[75vw] w-full h-[100vw]  rounded-2xl bg-cookie-bg2 bg-no-repeat bg-cover bg-center`}></div>
+              className={` lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] sm:w-9/12 sm:h-[75vw] w-full h-[100vw]  rounded-2xl cookieBg2 bg-no-repeat bg-cover bg-center`}></div>
           </div>
           <div className=" py-3 px-3 flex lg:flex-row-reverse flex-col gap-10  items-center">
             <div className="lg:w-1/2 w-full ">
