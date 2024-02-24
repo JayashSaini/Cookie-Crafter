@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "cookie-bg": "url(./cookieBg.svg)",
-        "cookie-bg2": "url(./Cookie2.jpeg)",
-        "cookie-bg3": "url(./Cookie3.jpeg)",
+        // "cookie-bg": "url(./cookieBg.svg)",
+        // "cookie-bg2": "url(./Cookie2.jpeg)",
+        // "cookie-bg3": "url(./Cookie3.jpeg)",
       },
     },
   },

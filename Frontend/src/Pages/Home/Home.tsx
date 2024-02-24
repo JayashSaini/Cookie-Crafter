@@ -6,7 +6,6 @@ import arrow from "../../assets/asset 8.svg";
 import appStoreIMG from "../../assets/asset 21.png";
 import playStoreIMG from "../../assets/asset 22.png";
 // import Cookie2 from "../../assets/Cookie2.jpeg";
-// import Cookie3 from "../../assets/Cookie3.jpeg";
 // import cookieBg from "../../assets/cookieBg.svg";
 
 import { useMyContext } from "../../context/ContextProvider";
@@ -140,7 +139,7 @@ const Home = () => {
               </p>
             </div>
             <div
-              className={`lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] sm:w-9/12 sm:h-[75vw] w-full h-[100vw]  rounded-2xl  bg-cookie-bg3 bg-no-repeat bg-cover bg-center`}></div>
+              className={`lg:w-[500px] lg:h-[500px] md:w-[400px] md:h-[400px] sm:w-9/12 sm:h-[75vw] w-full h-[100vw]  rounded-2xl  cookieBg3 bg-no-repeat bg-cover bg-center`}></div>
           </div>
         </div>
       </div>
