@@ -18,7 +18,7 @@ const Home = () => {
       <div
         className={` ${
           hamburgerState ? "hidden" : "block"
-        } w-full min-h-screen bg-white lg:px-16 md:px-24 sm:px-6 pr-1 pl-1 `}>
+        } sm:block w-full min-h-screen bg-white lg:px-16 md:px-24 sm:px-6 pr-1 pl-1 `}>
         <div className="lg:flex lg:flex-row flex-col  justify-start lg:items-center items-start w-full">
           {/* Responsive layout */}
           <div className="lg:w-1/2 w-full  lg:mb-1 lg:mt-1 mt-10 mb-10 flex flex-col m-3 justify-center items-start ">
