@@ -184,7 +184,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
               Terms & Conditions
             </a>
             <a
-              href="*"
+              href="/franchise"
               className="m-2 font-bold text-black text-[18px] text-center">
               Franchise
             </a>
