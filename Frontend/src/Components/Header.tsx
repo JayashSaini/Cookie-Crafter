@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useMyContext } from "../context/ContextProvider";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import cookieImage from "../assets/asset 0.svg";
 import Signup from "../assets/LoginLogo.svg";
@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           </div>
         </div>
 
-        <div className=" hamburger sm:hidden  h-auto   hidden w-full absolute top-0 left-0   backdrop-blur-sm bg-slate-500/30 translate-y-full opacity-0">
+        <div className=" hamburger sm:hidden  h-auto   hidden w-full absolute top-0 left-0   backdrop-blur-sm bg-slate-500/30 translate-y-full opacity-0 z-50">
           <div
             className=" sm:hidden h-[100px] w-full"
             onClick={hamburgerHandler}></div>
@@ -183,11 +183,12 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
               className="m-2 font-bold text-black text-[18px] text-center">
               Terms & Conditions
             </a>
-            <a
-              href="/franchise"
-              className="m-2 font-bold text-black text-[18px] text-center">
+            <Link
+              to="/franchise"
+              className="m-2 font-bold text-black text-[18px] text-center"
+              onClick={hamburgerHandler}>
               Franchise
-            </a>
+            </Link>
             <a
               href="*"
               className="m-2 font-bold text-black text-[18px] text-center">
