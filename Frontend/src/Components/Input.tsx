@@ -3,7 +3,7 @@ import { InputData } from "../types/types";
 
 const Input: React.FC<InputData> = ({
   label,
-  type,
+  type = "text",
   onChange,
   value,
   style,
@@ -24,7 +24,7 @@ const Input: React.FC<InputData> = ({
           type={type}
           value={value}
           onChange={onChange}
-          className=" remove-arrow  w-full  h-8 my-2 bg-transparent border-gray-200 border-2 rounded-xl text-gray-200 p-1 appearance-none 
+          className=" remove-arrow  w-full  h-8 my-2 bg-transparent border-gray-400 hover:border-gray-300 border-2 rounded-lg text-gray-200 p-1 appearance-none 
            font-medium text-sm tracking-wider focus:border-orange-400 outline-none duration-200 ease-out
           "
         />
