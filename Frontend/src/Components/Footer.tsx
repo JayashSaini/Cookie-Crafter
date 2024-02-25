@@ -2,7 +2,7 @@ import { useState } from "react";
 import CookieLogo from "../assets/WhiteCookie.svg";
 import appStoreIMG from "../assets/asset 21.png";
 import playStoreIMG from "../assets/asset 22.png";
-const Footer = () => {
+const Footer: React.FC = () => {
   const [email, setEmail] = useState("");
   return (
     <>
@@ -69,11 +69,11 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-64 px-4 py-2 border font-semibold text-black border-gray-300 rounded-l focus:outline-none"
+              className="w-64 px-4 py-2 border font-semibold text-black border-gray-300  focus:outline-none rounded-full rounded-r-none"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="px-4 py-2 bg-orange-500 text-white rounded-r font-bold hover:bg-orange-600 focus:outline-none">
+            <button className="px-4 py-[10px] bg-orange-500 text-white  font-bold hover:bg-orange-600 focus:outline-none rounded-full rounded-l-none">
               Submit
             </button>
           </div>
