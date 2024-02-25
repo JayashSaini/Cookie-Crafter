@@ -5,13 +5,17 @@ import cookie3 from "../../assets/asset 9.png";
 import arrow from "../../assets/asset 8.svg";
 import appStoreIMG from "../../assets/asset 21.png";
 import playStoreIMG from "../../assets/asset 22.png";
-// import Cookie2 from "../../assets/Cookie2.jpeg";
-// import cookieBg from "../../assets/cookieBg.svg";
 
 import { useMyContext } from "../../context/ContextProvider";
+import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+const Home: React.FC = () => {
   const { hamburgerState } = useMyContext();
+  const navigate = useNavigate();
+
+  const Orderhandler = () => {
+    navigate("/catering");
+  };
   return (
     <>
       <div
@@ -38,7 +42,7 @@ const Home = () => {
                 backgroundColor="bg-white"
                 text="Catering"
                 textColor="text-orange-500"
-                onClick={() => {}}
+                onClick={Orderhandler}
               />
             </div>
           </div>
