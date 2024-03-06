@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "watch": "tsc -w",
-    "dev": "concurrently \"tsc -w\" \"npx nodemon dist/server.js\""
+    "build": "npx tsc",
+    "start": "node dist/index.ts",
+    "watch": "npx tsc -w",
+    "dev": "concurrently \"npx tsc -w\" \"npx nodemon dist/index.js\""
   },
   "repository": {
     "type": "git",
