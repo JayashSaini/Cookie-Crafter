@@ -2,7 +2,7 @@ class ApiError extends Error {
   constructor(
     public statusCode: number,
     public error: any,
-    public success: boolean,
+    public success: boolean = false,
     message: string = ""
   ) {
     super(message);
