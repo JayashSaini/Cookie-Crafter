@@ -8,12 +8,24 @@ interface ContextProviderProps {
 
 const ContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
   const [hamburgerState, setHamburgerState] = useState(false);
+  const [signInModel, setSignInModel] = useState(false);
+
   const toggleHamburger = () => {
     setHamburgerState((prev) => !prev);
   };
 
+  const toggleSignInModel = () => {
+    setSignInModel((prev) => !prev);
+  };
+
   return (
-    <myContext.Provider value={{ hamburgerState, toggleHamburger }}>
+    <myContext.Provider
+      value={{
+        hamburgerState,
+        toggleHamburger,
+        signInModel,
+        toggleSignInModel,
+      }}>
       {children}
     </myContext.Provider>
   );

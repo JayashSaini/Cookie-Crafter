@@ -11,6 +11,8 @@ import Hamburgur from "../assets/Hamburgur.svg";
 import locationWhite from "../assets/LocationWhite.svg";
 import phoneLogo from "../assets/phoneLogo.svg";
 
+import { Signin } from "./Signin";
+
 interface HeaderProps {
   isScrolled: boolean;
 }
@@ -20,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
   const { contextSafe } = useGSAP({ scope: container });
   const [menuState, setMenuState] = useState(false);
 
-  const { toggleHamburger } = useMyContext();
+  const { toggleHamburger, signInModel, toggleSignInModel } = useMyContext();
 
   const hamburgerHandler = contextSafe(() => {
     if (!menuState) {
@@ -107,6 +109,10 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
                 height="35px"
                 width="35px"
                 className="cursor-pointer  md:w-10 lg:w-12"
+                onClick={() => {
+                  document.body.classList.add("modal-open");
+                  toggleSignInModel();
+                }}
               />
               <img
                 src={CookieCount}
@@ -197,6 +203,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           </div>
         </div>
       </div>
+      {signInModel && <Signin />}
     </>
   );
 };
